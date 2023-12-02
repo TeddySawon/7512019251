@@ -1,153 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css">-->
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="icon.css">
+  <meta charset="UTF-8">
+  <title>Blog Saya</title>
+  <!-- Tambahkan link ke Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-
-    <!-- Header -->
-    <header class="bg-blue-300 p-4">
-        <div class="container mx-auto text-center text-white">
-            <h1 class="text-3xl font-bold">Teddy Sawon Setyo</h1>
-            <p class="text-xl">Portofolio</p>
-        </div>
-    </header>
-
-    <!-- Content -->
-    <div class="container mx-auto mt-8 p-4">
-        <!-- Tentang Saya -->
-        <section class="mb-6">
-			<h2 class="text-2xl font-semibold mb-4">Tentang Saya</h2>
-			
-			<table>
-				<tr>
-					<td>
-						<img src="pictures/profil.jpg" alt="Profil" class="mr-4">
-					</td>
-					<td>
-						<table>
-							<tr>
-								<td>
-									<p class="left-text">Nama</p>
-								</td>
-								<td>
-									<p>:</p>
-								</td>
-								<td>
-									<p class="left-text">Teddy Sawon Setyo</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p class="left-text">Tempat, Tanggal Lahir</p>
-								</td>
-								<td>
-									<p>:</p>
-								</td>
-								<td>
-									<p class="left-text">Surabaya, 7 Mei 2001</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p class="left-text">Alamat</p>
-								</td>
-								<td>
-									<p>:</p>
-								</td>
-								<td>
-									<p class="left-text">Jl. Tambak Asri No.60, Surabaya</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p class="left-text">Jenis Kelamin</p>
-								</td>
-								<td>
-									<p>:</p>
-								</td>
-								<td>
-									<p class="left-text">Laki-Laki</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p class="left-text">Kewarganegaraan</p>
-								</td>
-								<td>
-									<p>:</p>
-								</td>
-								<td>
-									<p class="left-text">WNI</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p class="left-text">Agama</p>
-								</td>
-								<td>
-									<p>:</p>
-								</td>
-								<td>
-									<p class="left-text">Islam</p>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
-		</section>
-				
-		<section>
-			<div>
-				<p>Sebagai seorang yang professional yang berdedikasi, saya memiliki latar belakang yang kuat dalam banyak bidang dan keterampilan yang luas. Saya memiliki keinginan untuk terus belajar dan berkembang di lingkungan baru yang dinamis dan inovatif.</p>
-			</div>
-		</section>
-
-        <!-- Portofolio -->
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-4">Portofolio</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Item Portofolio -->
-                <div class="bg-white p-4 rounded shadow-md">
-                    <img src="sample-image-1.jpg" alt="Proyek 1" class="mb-2">
-                    <h3 class="text-lg font-semibold">Proyek 1</h3>
-                    <p>Deskripsi singkat proyek 1.</p>
-                </div>
-
-                <!-- Item Portofolio -->
-                <div class="bg-white p-4 rounded shadow-md">
-                    <img src="sample-image-2.jpg" alt="Proyek 2" class="mb-2">
-                    <h3 class="text-lg font-semibold">Proyek 2</h3>
-                    <p>Deskripsi singkat proyek 2.</p>
-                </div>
-
-                <!-- Item Portofolio -->
-                <div class="bg-white p-4 rounded shadow-md">
-                    <img src="sample-image-3.jpg" alt="Proyek 3" class="mb-2">
-                    <h3 class="text-lg font-semibold">Proyek 3</h3>
-                    <p>Deskripsi singkat proyek 3.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Kontak -->
-        <section>
-            <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
-            <p>Email: Marcoexico00@gmail.com</p>
-            <p>Telepon: +6281515015990</p>
-        </section>
+<body>
+  <header class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold">CindyCell (Sri Utami)</h1>
     </div>
+  </header>
+  
+  <div class="container mx-auto mt-4">
+    <!-- Konten Blog -->
+    <div id="blog-posts"></div>
+    
+    <!-- Form Tambah Artikel -->
+    <form id="add-post-form">
+      <input type="text" id="title" placeholder="Nama Barang" required class="block mb-2 p-2 w-full">
+      <textarea id="content" placeholder="Harga" required class="block mb-2 p-2 w-full"></textarea>
+      <button type="submit" class="bg-blue-500 text-white py-2 px-4">Tambah + </button>
+    </form>
+  </div>
 
-    <!-- Footer -->
-    <footer class="bg-blue-500 p-4 text-center text-white">
-        <p><i><b>&copy 2023 Teddy Sawon</b></i></p>
-    </footer>
-
+  <!-- Script JavaScript -->
+  <script src="main.js"></script>
 </body>
 </html>
